@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  nodejs-app:
+    build:
+      context: ./conversao-temperatura/src
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
